@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'NodeHttpConnector_Example', :exclusive => true do
+  pod "NodeHttpConnector", :path => "../"
+end
+
+target 'NodeHttpConnector_Tests', :exclusive => true do
+  pod "NodeHttpConnector", :path => "../"
+
+  
+end

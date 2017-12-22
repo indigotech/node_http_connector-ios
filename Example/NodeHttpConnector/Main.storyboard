@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="NCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TQConnecter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aqq-qR-192">
+                                <rect key="frame" x="34" y="120" width="530" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="This pod connects your iOS app to Taqtile's node servers. We're using br-raia-server as example " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ttl-xZ-Ybk">
+                                <rect key="frame" x="31" y="187" width="705" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X50-WJ-Dte">
+                                <rect key="frame" x="245" y="285" width="111" height="30"/>
+                                <state key="normal" title="Perform request">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestButton:" destination="whP-gf-Uak" eventType="touchUpInside" id="uH7-bl-jtl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="X50-WJ-Dte" secondAttribute="centerX" id="9Jb-ae-vhY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aqq-qR-192" secondAttribute="trailing" constant="20" id="AJ6-wc-q80"/>
+                            <constraint firstItem="Aqq-qR-192" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="262" id="Qku-Q5-ygN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aqq-qR-192" secondAttribute="trailing" constant="20" id="ZKg-c3-1FD"/>
+                            <constraint firstItem="Ttl-xZ-Ybk" firstAttribute="top" secondItem="Aqq-qR-192" secondAttribute="bottom" constant="40" id="lIy-I8-lzV"/>
+                            <constraint firstItem="Mvr-aV-6Um" firstAttribute="top" secondItem="X50-WJ-Dte" secondAttribute="bottom" constant="285" id="lay-OK-SLQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ttl-xZ-Ybk" secondAttribute="trailing" constant="15" id="s8Q-Ah-7e7"/>
+                            <constraint firstAttribute="centerY" secondItem="X50-WJ-Dte" secondAttribute="centerY" id="t0n-Ut-crN"/>
+                            <constraint firstItem="Ttl-xZ-Ybk" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leadingMargin" constant="15" id="teo-NG-tA0"/>
+                            <constraint firstAttribute="centerX" secondItem="Ttl-xZ-Ybk" secondAttribute="centerX" id="vEr-5D-FRS"/>
+                            <constraint firstAttribute="centerX" secondItem="Aqq-qR-192" secondAttribute="centerX" constant="1" id="y3p-Hb-gdT"/>
+                            <constraint firstItem="Aqq-qR-192" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="100" id="zw2-3I-1eg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Qku-Q5-ygN"/>
+                                <exclude reference="lay-OK-SLQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Ttl-xZ-Ybk" id="HzW-2p-IdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="309" y="511"/>
+        </scene>
+    </scenes>
+</document>

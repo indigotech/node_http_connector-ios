@@ -1,0 +1,31 @@
+{
+  "name": "NodeHttpConnector",
+  "version": "0.3.4",
+  "summary": "This coacoapod will encapsulate the logic to communicate to our Node Servers while developing to iOS.",
+  "description": "This pod has the following responsibilities:\n\n+ Abstract http requests\n+ Handle common errors\n+ Support client authentication\n  + No authentication\n  + JWC\n+ Parse http responses",
+  "homepage": "https://github.com/indigotech/br-taqtile-node_http_connector-ios",
+  "license": "MIT",
+  "authors": {
+    "Adriano Valente": "dri9595@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/indigotech/br-taqtile-node_http_connector-ios.git",
+    "tag": "0.3.4"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "NodeHttpConnector": [
+      "Pod/Assets/*.png"
+    ]
+  },
+  "public_header_files": "Pod/Classes/**/*.h",
+  "dependencies": {
+    "AFNetworking": [
+      "2.6.3"
+    ]
+  }
+}
